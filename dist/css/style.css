@@ -10,6 +10,11 @@
   padding: 0;
 }
 
+body {
+  background-image: url("../img/background.jpg");
+  background-size: cover;
+}
+
 .container {
   width: 1170px;
   padding: 0 15px;
@@ -61,7 +66,15 @@ h6 {
 .btn {
   font-weight: 600;
   padding: 5px 30px;
-  border: 2px solid;
+  border: 3px solid;
+}
+
+.title {
+  font-family: "Playfair Display", serif;
+  font-size: 34px;
+  font-weight: 700;
+  color: #000;
+  line-height: 32px;
 }
 
 .header {
@@ -101,7 +114,7 @@ h6 {
 
 .header__btn {
   display: block;
-  width: 181px;
+  width: 185px;
   color: #fff;
   border-color: #fff;
 }
@@ -175,7 +188,7 @@ h6 {
   background: rgba(0, 0, 0, 0.75);
   color: #fff;
   font-weight: 700;
-  border-radius: 20px;
+  border-radius: 25px;
 }
 
 .hero__button:hover {
@@ -191,4 +204,81 @@ h6 {
   top: 115px;
   right: 0;
   width: auto;
+}
+
+.welcome {
+  padding: 25px 0;
+}
+
+.welcome__wrap {
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 30px 20px;
+}
+
+.welcome__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.welcome__text,
+.welcome__photos {
+  width: 48%;
+}
+
+.welcome__lines {
+  width: 258px;
+  margin: 10px 0 30px;
+}
+
+.welcome__btn {
+  margin-left: auto;
+  margin-top: 30px;
+  border-color: #000;
+  color: #000;
+}
+
+.welcome__btn:hover {
+  background-color: #000;
+  color: #fff;
+  -webkit-transition: 0.5s ease-in;
+  -o-transition: 0.5s ease-in;
+  transition: 0.5s ease-in;
+}
+
+.welcome__photos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.welcome__photo {
+  width: 48%;
+  height: auto;
+  margin: 8px 0;
+}
+
+.welcome__photo:hover {
+  -webkit-transform: scale(1.03);
+      -ms-transform: scale(1.03);
+          transform: scale(1.03);
+  -webkit-transition: 0.2s ease-in;
+  -o-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
 }

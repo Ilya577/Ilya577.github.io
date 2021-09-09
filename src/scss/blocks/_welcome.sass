@@ -1,0 +1,38 @@
+.welcome
+  padding: 25px 0
+  &__wrap
+    height: 500px
+    +fb
+    background: rgb(255,255,255, .8)
+    padding: 30px 20px
+  &__text
+    +fc
+  &__text,&__photos
+    width: 48%
+  &__lines
+    width: 258px
+    margin: 10px 0 30px 
+  &__btn
+    margin-left: auto
+    margin-top: 30px
+    border-color: $bl
+    color: $bl
+    &:hover
+      background-color: $bl
+      color: $wh
+      +tran(.5s)
+  &__photos
+    +fb
+    flex-wrap: wrap
+  &__photo
+    width: 48%
+    height: auto
+    margin: 8px 0
+    &:hover
+      transform: scale(1.03)
+      +tran
+
+    
+
+    
+
