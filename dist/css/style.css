@@ -77,6 +77,22 @@ h6 {
   line-height: 32px;
 }
 
+.text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 48%;
+}
+
+.lines {
+  width: 258px;
+  padding: 15px 0 26px;
+}
+
 .header {
   height: 115px;
   background-color: rgba(0, 0, 0, 0.7);
@@ -222,24 +238,8 @@ h6 {
   padding: 30px 20px;
 }
 
-.welcome__text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.welcome__text,
 .welcome__photos {
   width: 48%;
-}
-
-.welcome__lines {
-  width: 258px;
-  margin: 10px 0 30px;
 }
 
 .welcome__btn {
@@ -281,4 +281,50 @@ h6 {
   -webkit-transition: 0.2s ease-in;
   -o-transition: 0.2s ease-in;
   transition: 0.2s ease-in;
+}
+
+.host {
+  width: 100%;
+  background-image: url("../img/chef.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 450px;
+  padding: 25px 0;
+}
+
+.host__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.host__section {
+  margin: 20px 0 60px;
+}
+
+.host__btn {
+  margin-left: 20px;
+  border-color: #000;
+  color: #000;
+}
+
+.host__btn:hover {
+  background-color: #000;
+  color: #fff;
+  -webkit-transition: 0.5s ease-in;
+  -o-transition: 0.5s ease-in;
+  transition: 0.5s ease-in;
+}
+
+.host__btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: 30px;
 }
