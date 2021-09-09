@@ -1,0 +1,28 @@
+.header
+  height: 115px
+  background-color: rgba(0,0,0,0.7)
+  z-index: 100
+  position: fixed
+  width: 100%
+  padding: 20px 0 10px
+  &__wrap
+    +fb
+    height: 100%
+  &__nav-wrap
+    +fc
+    align-items: flex-end
+    justify-content: space-between
+  &__btn
+    display: block
+    width: 181px
+    color: $wh
+    border-color: $wh
+.nav
+  &__list
+    +fr
+    justify-content: space-between
+    width: ($containerWidth - 402px)
+  &__link
+    +fontSettings($mon, 15px, 700, $wh, 40px)
+    
+

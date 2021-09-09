@@ -1,6 +1,12 @@
 $play: 'Playfair Display', serif
 $mon: 'Montserrat', sans-serif
 
+$containerWidth: 1170px
+@media (max-width: 1200px)
+  $containerWidth: 960px
+@media (max-width: 992px)
+  $containerWidth: 720px
+
 $bl: #000
 $wh: #fff
 
@@ -10,3 +16,16 @@ $wh: #fff
   font-weight: $fontWeight
   color: $fontColor
   line-height: $lineH
+
+=fc($display: flex, $flexCol: column)
+  display: $display
+  flex-direction: $flexCol
+
+=fr($display: flex, $flexRow: row)
+  display: $display
+  flex-direction: $flexRow
+
+=fb($display: flex, $jcsb: space-between)
+  display: $display
+  justify-content: $jcsb
+
