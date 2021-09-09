@@ -17,12 +17,20 @@
     width: 181px
     color: $wh
     border-color: $wh
+    &:hover
+      color: $gr
+      border-color: $gr
+      transition: .3s ease-in
 .nav
   &__list
     +fr
     justify-content: space-between
-    width: ($containerWidth - 402px)
+    width: ($containerWidth - 382px)
   &__link
     +fontSettings($mon, 15px, 700, $wh, 40px)
+    padding: 5px 20px
+    &:hover
+      color: $gr
+      transition: .2s ease-in
     
 

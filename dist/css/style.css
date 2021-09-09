@@ -106,6 +106,14 @@ h6 {
   border-color: #fff;
 }
 
+.header__btn:hover {
+  color: #1caa49;
+  border-color: #1caa49;
+  -webkit-transition: 0.3s ease-in;
+  -o-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+}
+
 .nav__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -117,7 +125,7 @@ h6 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 768px;
+  width: 788px;
 }
 
 .nav__link {
@@ -126,4 +134,12 @@ h6 {
   font-weight: 700;
   color: #fff;
   line-height: 40px;
+  padding: 5px 20px;
+}
+
+.nav__link:hover {
+  color: #1caa49;
+  -webkit-transition: 0.2s ease-in;
+  -o-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
 }
