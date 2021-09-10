@@ -417,3 +417,65 @@ h6 {
 .meals__btns {
   margin-top: 30px;
 }
+
+.deals__wrap {
+  margin-bottom: 30px;
+  padding: 35px 25px;
+  background: rgba(255, 255, 255, 0.85);
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.deals__universal {
+  width: 364px;
+  height: 270px;
+}
+
+.deals-mini-title {
+  font-family: "Playfair Display", serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #000;
+  line-height: 24px;
+}
+
+.deals-mini-title2 {
+  font-family: "Playfair Display", serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #000;
+  line-height: 18px;
+}
+
+.deals__mini-title {
+  margin-top: 5px;
+}
+
+.deals-mini-text {
+  font-size: 13px;
+}
+
+.deals-mini-text2 {
+  font-size: 11px;
+  width: 360px;
+  line-height: 11px;
+}
+
+.deals__mini-text {
+  margin-top: 8px;
+}
+
+.deals__end-text {
+  margin-top: 35px;
+  font-size: 14px;
+  line-height: 16px;
+}
