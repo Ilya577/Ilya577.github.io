@@ -65,7 +65,7 @@ h6 {
 
 .btn {
   font-weight: 600;
-  padding: 5px 30px;
+  padding: 6px 30px;
   border: 3px solid;
 }
 
@@ -377,4 +377,43 @@ h6 {
 
 .location__img {
   width: 100%;
+}
+
+.meals {
+  background-image: url("../img/meals.jpg");
+  height: 524px;
+  background-position: center;
+  background-size: cover;
+  padding: 50px 0;
+}
+
+.meals__section {
+  margin-bottom: 50px;
+}
+
+.meals__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.meals__btn {
+  margin-right: 20px;
+  border-color: #000;
+  color: #000;
+}
+
+.meals__btn:hover {
+  background-color: #000;
+  color: #fff;
+  -webkit-transition: 0.5s ease-in;
+  -o-transition: 0.5s ease-in;
+  transition: 0.5s ease-in;
+}
+
+.meals__btns {
+  margin-top: 30px;
 }
