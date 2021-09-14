@@ -1,10 +1,26 @@
 .welcome
   padding: 25px 0
+  &__text
+    +for-size(tablet-landscape-up) 
+      width: 90%
   &__wrap
     height: 500px
     +fb
     background: rgb(255,255,255, .8)
     padding: 30px 20px
+    +for-size(tablet-landscape-up)
+      +fc
+      height: auto
+      align-items: center
+      text-align: center
+      padding: 30px 0
+    +for-size(tablet-portrait-up) 
+      padding: 30px 0
+    +for-size(phone-only) 
+      padding: 30px 0
+    & .lines
+      +for-size(tablet-landscape-up)
+        display: none
   &__photos
     width: 48%
   &__btn
@@ -12,6 +28,8 @@
     margin-top: 30px
     border-color: $bl
     color: $bl
+    +for-size(tablet-landscape-up)
+      margin: 20px auto
     &:hover
       background-color: $bl
       color: $wh
@@ -19,6 +37,8 @@
   &__photos
     +fb
     flex-wrap: wrap
+    +for-size(tablet-landscape-up)
+      display: none
   &__photo
     width: 48%
     height: auto

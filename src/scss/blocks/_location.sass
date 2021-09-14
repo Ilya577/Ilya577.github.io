@@ -6,11 +6,20 @@
     align-items: center
     padding: 30px 15px 0
     background: rgb(255,255,255, .85)
+    +for-size(tablet-portrait-up) 
+      padding-top: 25px  
+      padding-bottom: 25px
   &__photos
     +fb
     flex-wrap: wrap
   &-photo
     width: 32%
+    +for-size(phone-only) 
+      text-align: center
+    +for-size(tablet-portrait-up) 
+      width: 49%
+    +for-size(phone-only) 
+      width: 100%
   &__photo
     margin-bottom: 36px
     &-title

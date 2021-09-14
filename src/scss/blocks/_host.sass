@@ -5,15 +5,24 @@
   background-position: center
   height: 450px
   padding: 25px 0
+  +for-size(tablet-landscape-up) 
+    height: auto
   &__wrap
     display: flex
     justify-content: flex-end
+    +for-size(tablet-portrait-up) 
+      justify-content: center
+  & .lines
+    +for-size(tablet-portrait-up) 
+      display: none
   &__section
     margin: 20px 0 60px
   &__btn
     margin-left: 20px
     border-color: $bl
     color: $bl
+    +for-size(phone-only) 
+      margin-bottom: 20px
     &:hover
       background-color: $bl
       color: $wh
@@ -22,5 +31,9 @@
     display: flex
     justify-content: flex-end
     margin-top: 30px
+    +for-size(tablet-portrait-up) 
+      justify-content: center
+    +for-size(phone-only) 
+      +fc
   
    

@@ -1,11 +1,25 @@
 $play: 'Playfair Display', serif
 $mon: 'Montserrat', sans-serif
 
+=for-size($size) 
+  @if $size == phone-only 
+    @media (max-width: 599px) 
+      @content
+  @else if $size == tablet-portrait-up 
+    @media (max-width: 899px) 
+      @content 
+  @else if $size == tablet-landscape-up 
+    @media (max-width: 1199px) 
+      @content
+  @else if $size == desktop-up 
+    @media (max-width: 1799px) 
+      @content
+  @else if $size == big-desktop-up 
+    @media (min-width: 1800px) 
+      @content 
+
 $containerWidth: 1170px
-@media (max-width: 1200px)
-  $containerWidth: 960px
-@media (max-width: 992px)
-  $containerWidth: 720px
+$containerPad: 0 15px
 
 $bl: #000
 $wh: #fff

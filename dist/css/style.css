@@ -93,13 +93,20 @@ h6 {
   padding: 15px 0 26px;
 }
 
+.lines__none {
+  display: none;
+}
+
 .header {
   height: 115px;
   background-color: rgba(0, 0, 0, 0.7);
   z-index: 100;
-  position: fixed;
   width: 100%;
   padding: 20px 0 10px;
+}
+
+.header__section {
+  position: fixed;
 }
 
 .header__wrap {
@@ -173,11 +180,17 @@ h6 {
   transition: 0.2s ease-in;
 }
 
+.phone img,
+.menu {
+  display: none;
+}
+
 .hero {
   background-image: url("../img/pizza.jpg");
   background-size: cover;
   width: 100%;
   position: relative;
+  background-position: center;
 }
 
 .hero__wrap {
@@ -483,6 +496,12 @@ h6 {
 .footer {
   background: #000;
   height: 140px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .footer__wrap {
@@ -528,4 +547,338 @@ h6 {
 
 .footer__text {
   font-weight: 400;
+}
+
+@media (max-width: 1799px) {
+  .container {
+    width: 1200px;
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .container {
+    width: 900px;
+    padding: 0 10px;
+  }
+
+  .lines__none {
+    display: block !important;
+    margin: 0 auto;
+  }
+
+  .nav__list {
+    width: 490px;
+  }
+
+  .nav__link {
+    padding: 5px;
+  }
+
+  .welcome__text {
+    width: 90%;
+  }
+
+  .welcome__wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    padding: 30px 0;
+  }
+
+  .welcome__wrap .lines {
+    display: none;
+  }
+
+  .welcome__btn {
+    margin: 20px auto;
+  }
+
+  .welcome__photos {
+    display: none;
+  }
+
+  .host {
+    height: auto;
+  }
+
+  .meals {
+    height: auto;
+  }
+
+  .meals__text {
+    width: 55%;
+  }
+
+  .deals__wrap {
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+
+  .footer__right {
+    width: 60%;
+  }
+}
+
+@media (max-width: 899px) {
+  * {
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: #000;
+    line-height: 24px;
+  }
+
+  .container {
+    width: 600px;
+  }
+
+  .text {
+    text-align: center;
+    width: 90%;
+  }
+
+  .header {
+    background-color: #000;
+    height: 80px;
+  }
+
+  .header__btn {
+    display: none;
+  }
+
+  .nav__list {
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 80px;
+    text-align: center;
+    z-index: 50;
+  }
+
+  .nav__list li {
+    border-bottom: 2px solid #7c4d52;
+    background: #4e4e4e;
+  }
+
+  .nav__list li:hover {
+    background: #181818;
+    -webkit-transition: 0.5s ease-in;
+    -o-transition: 0.5s ease-in;
+    transition: 0.5s ease-in;
+  }
+
+  .nav__link {
+    padding: 11px 100px;
+  }
+
+  .nav__link:hover {
+    color: #fff;
+  }
+
+  .phone img,
+  .menu {
+    display: block;
+    width: 40px;
+    height: 40px;
+  }
+
+  .delivery-img {
+    height: 65px !important;
+  }
+
+  .welcome__wrap {
+    padding: 30px 0;
+  }
+
+  .host__wrap {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .host .lines {
+    display: none;
+  }
+
+  .host__btns {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .location__wrap {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  .location-photo {
+    width: 49%;
+  }
+
+  .meals {
+    position: relative;
+    background: none;
+  }
+
+  .meals .lines {
+    display: none;
+  }
+
+  .meals::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../img/meals.jpg) !important;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.7;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+
+  .meals__wrap {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .footer__wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .footer__right {
+    width: 100%;
+  }
+
+  .footer__left {
+    text-align: center;
+    width: 100%;
+    margin-top: 16px;
+  }
+}
+
+@media (max-width: 599px) {
+  .container {
+    width: 320px;
+  }
+
+  .header__section {
+    position: static;
+  }
+
+  .header {
+    width: 100%;
+  }
+
+  .logo img {
+    width: 180px;
+  }
+
+  .hero {
+    height: 340px !important;
+  }
+
+  .hero__buttons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 220px;
+    text-align: center;
+    bottom: 20px;
+  }
+
+  .hero__button {
+    margin-bottom: 10px;
+  }
+
+  .delivery-img {
+    display: none;
+  }
+
+  .welcome__wrap {
+    padding: 30px 0;
+  }
+
+  .host__btn {
+    margin-bottom: 20px;
+  }
+
+  .host__btns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .location-photo {
+    text-align: center;
+  }
+
+  .location-photo {
+    width: 100%;
+  }
+
+  .meals__btn {
+    margin-bottom: 15px;
+  }
+
+  .meals__btns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .deals__universal {
+    width: 300px;
+    height: auto;
+  }
+
+  .deals-mini-text2 {
+    width: 300px;
+  }
+
+  .deals__end-text {
+    font-size: 12px;
+  }
+
+  .footer__right {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .footer__logo {
+    display: none;
+  }
+
+  .footer__copyright p {
+    text-align: center;
+  }
 }

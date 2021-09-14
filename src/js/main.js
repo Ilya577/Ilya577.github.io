@@ -1,1 +1,2 @@
-@@include('hero.js') 
+@@include('hero.js')
+@@include('header.js') 

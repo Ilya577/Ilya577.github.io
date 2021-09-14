@@ -1,25 +1,43 @@
 .footer
   background: $bl
   height: 140px
+  display: flex
+  align-items: center
   &__wrap
     padding: 40px 35px
     +fb
+    +for-size(tablet-portrait-up) 
+      flex-wrap: wrap
   &__right
     +fb
     width: 52%
+    +for-size(tablet-landscape-up) 
+      width: 60%
+    +for-size(tablet-portrait-up) 
+      width: 100%
+    +for-size(phone-only) 
+      justify-content: center
   &__left
     width: 30%
     color: $wh
     text-align: end
     margin: auto 0
+    +for-size(tablet-portrait-up) 
+      text-align: center
+      width: 100%
+      margin-top: 16px
   &__logo
     width: 220px
+    +for-size(phone-only) 
+      display: none
   &__logo img
     width: 100%
   &__copyright p
     font-size: 12px
     color: $wh
     font-weight: 700
+    +for-size(phone-only) 
+      text-align: center
   &__text
     font-weight: 400
     

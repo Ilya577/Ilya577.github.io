@@ -6,9 +6,15 @@
     text-align: center
     +fc
     align-items: center
+    +for-size(tablet-landscape-up) 
+      padding-top: 35px
+      padding-bottom: 35px
   &__universal
     width: 364px
     height: 270px
+    +for-size(phone-only) 
+      width: 300px
+      height: auto
   &-mini-title
     +fontSettings($play, 24px, 700, $bl, 24px)
     &2
@@ -21,10 +27,14 @@
       font-size: 11px
       width: 360px
       line-height: 11px
+      +for-size(phone-only) 
+        width: 300px
   &__mini-text
     margin-top: 8px
   &__end-text
     margin-top: 35px
     font-size: 14px
     line-height: 16px
+    +for-size(phone-only)  
+      font-size: 12px
   

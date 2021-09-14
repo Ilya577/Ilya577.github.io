@@ -3,15 +3,37 @@
   box-sizing: border-box
   margin: 0
   padding: 0
-
+  +for-size(tablet-portrait-up) 
+    +fontSettings($mon, 12px, 400, $bl, 24px)
 body
   background-image: url('../img/background.jpg')
   background-size: cover
 
 .container
   width: $containerWidth
-  padding: 0 15px
+  padding: $containerPad
   margin: 0 auto
+  
++for-size(desktop-up) 
+  $containerWidth: 1200px
+  $containerPad: 0 15px
+  .container
+    width: $containerWidth
+    padding: $containerPad
++for-size(tablet-landscape-up) 
+  $containerWidth: 900px
+  $containerPad: 0 10px
+  .container
+    width: $containerWidth
+    padding: $containerPad
++for-size(tablet-portrait-up) 
+  $containerWidth: 600px
+  .container
+    width: $containerWidth
++for-size(phone-only) 
+  $containerWidth: 320px
+  .container
+    width: $containerWidth
 
 a
   color: $wh
@@ -46,7 +68,15 @@ h1,h2,h3,h4,h5,h6
 .text
   +fc
   width: 48%
+  +for-size(tablet-portrait-up) 
+    text-align: center
+    width: 90%
 
 .lines
   width: 258px
   padding: 15px 0 26px
+  &__none
+    display: none
+    +for-size(tablet-landscape-up)
+      display: block!important
+      margin: 0 auto

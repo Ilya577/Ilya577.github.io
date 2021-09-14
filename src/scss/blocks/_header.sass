@@ -2,9 +2,17 @@
   height: 115px
   background-color: rgba(0,0,0,0.7)
   z-index: 100
-  position: fixed
   width: 100%
   padding: 20px 0 10px
+  &__section
+    position: fixed
+    +for-size(phone-only)
+      position: static
+  +for-size(phone-only)
+    width: 100%
+  +for-size(tablet-portrait-up)
+    background-color: $bl
+    height: 80px
   &__wrap
     +fb
     height: 100%
@@ -17,6 +25,8 @@
     width: 185px
     color: $wh
     border-color: $wh
+    +for-size(tablet-portrait-up) 
+      display: none
     &:hover
       color: $gr
       border-color: $gr
@@ -26,11 +36,44 @@
     +fr
     justify-content: space-between
     width: ($containerWidth - 382px)
+    +for-size(tablet-landscape-up) 
+      width: 490px
+    +for-size(tablet-portrait-up) 
+      display: none
+      flex-direction: column
+      width: 100%
+      position: absolute
+      left: 0
+      top: 80px
+      text-align: center
+      z-index: 50
+  &__list li
+    +for-size(tablet-portrait-up)
+      border-bottom: 2px solid #7c4d52
+      background: #4e4e4e
+      &:hover
+        background: #181818
+        +tran(0.5s)
   &__link
     +fontSettings($mon, 15px, 700, $wh, 40px)
     padding: 5px 20px
+    +for-size(tablet-portrait-up) 
+      padding: 11px 100px
+    +for-size(tablet-landscape-up) 
+      padding: 5px
     &:hover
       color: $gr
       transition: .2s ease-in
-    
+      +for-size(tablet-portrait-up)
+        color: $wh
+.phone img, .menu
+  display: none
+  +for-size(tablet-portrait-up) 
+    display: block
+    width: 40px
+    height: 40px
+.logo img
+  +for-size(phone-only) 
+    width: 180px
+
 
