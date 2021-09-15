@@ -552,14 +552,14 @@ h6 {
 @media (max-width: 1799px) {
   .container {
     width: 1200px;
-    padding: 0 15px;
+    padding: inherit 15px;
   }
 }
 
 @media (max-width: 1199px) {
   .container {
     width: 900px;
-    padding: 0 10px;
+    padding: inherit 10px;
   }
 
   .lines__none {
