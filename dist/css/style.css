@@ -868,6 +868,10 @@ h6 {
     font-size: 12px;
   }
 
+  .footer {
+    height: auto;
+  }
+
   .footer__right {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
